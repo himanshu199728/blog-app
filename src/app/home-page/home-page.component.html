@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-dark">
+    <a class="navbar-brand text-light ml-4" href="#">
+        <img src="../assets/./open-book.svg" width="30" height="30"
+            class="d-inline-block align-top bold font-weight-bold" alt="read_icon" loading="lazy">
+        <span class="ml-2 my-auto">ReadBlog</span>
+    </a>
+
+    <a class="nav-item ml-auto mr-2" *ngIf="isLogin">
+        <button class="btn btn-secondary">Profile</button>
+    </a>
+
+    <a class="nav-item mr-5" *ngIf="isLogin">
+        <button class="btn btn-secondary">Logout</button>
+    </a>
+</nav>
+<app-app-content></app-app-content>
